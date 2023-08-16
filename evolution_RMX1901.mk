@@ -15,10 +15,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 EVO_BUILD_TYPE := COMMUNITY
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := false
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_USES_MINI_GAPPS := true
-
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
@@ -31,11 +31,11 @@ PRODUCT_MODEL := Realme X
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cheetah-user 13 TQ3A.230705.001.A1 10217028 release-keys" \
+    PRIVATE_BUILD_DESC="cheetah-user 13 TQ3A.230805.001 10316531 release-keys" \
     PRODUCT_NAME="RMX1901"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := google/cheetah/cheetah:13/TQ3A.230705.001.A1/10217028:user/release-keys
+BUILD_FINGERPRINT := google/cheetah/cheetah:13/TQ3A.230805.001/10316531:user/release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)

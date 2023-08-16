@@ -12,6 +12,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="build_maintainer_summary">Ashim Anwar</string>
-    <string name="build_maintainer_telegram">https://t.me/Ashim_Uchiha</string>
+     
+	 <!-- About device screen, build maintainer -->
+    <string name="build_device_url">https://t.me/rmx1901_support</string>
+    <string name="build_maintainer_summary">IJ ISRAFIL</string>
+    <string name="build_maintainer_donate_url">https://t.me/IJ_israfil</string>
 </resources>

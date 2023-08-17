@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_RMX1901.mk
+    $(LOCAL_DIR)/derp_RMX1901.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_RMX1901-userdebug \
-    superior_RMX1901-eng
+    derp_RMX1901-user \
+    derp_RMX1901-eng

@@ -616,7 +616,6 @@ system_ext/lib64/libdpmctmgr.so|9d13e5ae9882f5b7e6ac31a9d073a66a27d1c465
 system_ext/lib64/libdpmfdmgr.so|b705b098462e1198fc24175732d687142cc26562
 system_ext/lib64/libdpmframework.so|c3d8d6f1745c19d29466e9de823ff56f9f8f6993
 system_ext/lib64/libdpmtcm.so|57b6c42d581305d8ef16aa127cd4cd1672d2e7f1
--system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|a2801e43710179694a1a765cea2a0fe376625c5e
 
 # DPM (vendor)- from RUI2 11/RKQ1.201217.002/1619368911282:user/release-keys
 vendor/bin/dpmQmiMgr|4fe936478b0da1ee20c6222234b80d478a72cc2a

@@ -137,6 +137,7 @@ iorapd.readahead.enable=false
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 ro.media.recorder-max-base-layer-fps=60
+mm.enable.smoothstreaming=true
 
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true

@@ -14,9 +14,18 @@ $(call inherit-product, vendor/superior/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 SUPERIOR_BUILD_TYPE := COMMUNITY
 USE_AOSP_DIALER := true
+USE_MOTO_CALCULATOR := true
+USE_MOTO_CLOCK := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_INCLUDE_MATLOG := false
 BUILD_WITH_GAPPS := true
 SUPERIOR_UDFPS_ANIMATIONS := true
-TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+USE_QUICKPIC := false
+USE_DUCKDUCKGO := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,6 +37,10 @@ PRODUCT_NAME := superior_RMX1901
 PRODUCT_MODEL := Realme X
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
+
+# Maintainer
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.spos.maintainer=м∂ ιѕяαƒιℓ
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="cheetah-user 13 TQ3A.230805.001 10316531 release-keys" \

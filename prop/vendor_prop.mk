@@ -172,6 +172,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.protected_contents=true
     debug.sf.auto_latch_unsignaled=true
     debug.sf.enable_gl_backpressure=1
+	vendor.gralloc.disable_ubwc=0 \
+	vendor.gralloc.disable_ahardware_buffer=1 \
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \

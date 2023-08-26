@@ -10,4 +10,3 @@ PRODUCT_MAKEFILES := \
 COMMON_LUNCH_CHOICES := \
     superior_RMX1901-userdebug \
     superior_RMX1901-eng
-    superior_RMX1971-user

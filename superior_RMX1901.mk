@@ -40,7 +40,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 # Maintainer
 PRODUCT_SYSTEM_PROPERTIES += \
-    ro.spos.maintainer=м∂ ιѕяαƒιℓ
+    ro.spos.maintainer=м∂_ιѕяαƒιℓ
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="cheetah-user 13 TQ3A.230805.001 10316531 release-keys" \

@@ -1,2 +1,0 @@
-# Lineage Health
-allow hal_lineage_health_default sysfs:file r_file_perms;

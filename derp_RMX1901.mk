@@ -16,6 +16,7 @@ EXTRA_UDFPS_ANIMATIONS := true
 WITH_GMS := true
 TARGET_NOT_USES_BLUR := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)

@@ -14,6 +14,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # maintainer flag
 ALPHA_MAINTAINER := м∂_ιѕяαƒιℓ
 WITH_GAPPS := true
+TARGET_DISABLE_EPPE := true
 
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080

@@ -909,7 +909,7 @@
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
 
     <!-- Whether device has a physical display cutout -->
-    <bool name="config_physicalDisplayCutout">true</bool>
+    <bool name="config_physicalDisplayCutout">false</bool>
 
     <!-- Whether to intercept inputs on screen off -->
     <bool name="config_enableKeyHandler">true</bool>
@@ -925,6 +925,9 @@
         <item>org.aospextended.device.KeyHandler</item>
         <item>com.android.touch.gestures.KeyHandler</item>
     </string-array>
+
+    <!-- Whether device has vooc charging support -->
+    <bool name="config_hasVoocCharger">true</bool>
 
     <!-- If true, the display will be shifted around in ambient mode. -->
     <bool name="config_enableBurnInProtection">true</bool>
@@ -1060,6 +1063,9 @@
 
     <string name="config_pocketJudgeVendorProximitySensorName">qti.sensor.proximity_fake</string>
 
+    <!-- Shows the required view for Screen Off Udfps -->
+    <bool name="config_supportsScreenOffUdfps">true</bool>
+
     <!-- Flag indicating whether the surface flinger is inefficient
          at performing a blur.  Used by parts of the UI to turn off
          the blur effect where it isn't worth the performance hit.
@@ -1098,6 +1104,8 @@
          -->
     <dimen name="status_bar_height_landscape">35dp</dimen>
 
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_enableSmartPixels">true</bool>
 
     <!-- The default intensity level for alarm vibrations. See
          Settings.System.ALARM_VIBRATION_INTENSITY more details on the constant values and

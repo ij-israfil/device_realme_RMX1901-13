@@ -15,7 +15,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 ALPHA_MAINTAINER := м∂_ιѕяαƒιℓ
 ALPHA_BUILD_TYPE := Official
 WITH_GAPPS := true
-TARGET_INCLUDE_GOOGLE_APP := true
+TARGET_INCLUDE_GOOGLE_APP := false
 TARGET_INCLUDE_GOOGLE_CALCULATOR := true
 TARGET_INCLUDE_GOOGLE_CALENDAR := true
 TARGET_INCLUDE_GOOGLE_CHROME := true

@@ -13,9 +13,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # maintainer flag
 ALPHA_MAINTAINER := м∂_ιѕяαƒιℓ
+ALPHA_BUILD_TYPE := UNOFFICIAL
 WITH_GAPPS := true
 TARGET_DISABLE_EPPE := true
 
+TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -24,6 +26,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_BLUR := true
 TARGET_EXCLUDES_AUDIOFX := true
 TARGET_BUILD_APERTURE_CAMERA := false
+TARGET_INCLUDE_GOOGLE_SETUP := true
 
 
 # Inherit from RMX1901 device

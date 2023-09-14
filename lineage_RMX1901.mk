@@ -11,10 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Alphadroid stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# maintainer flag
+# maintainer flag (make Official coz its not showing dev name)
 ALPHA_MAINTAINER := м∂_ιѕяαƒιℓ
-ALPHA_BUILD_TYPE := UNOFFICIAL
+ALPHA_BUILD_TYPE := Official
 WITH_GAPPS := true
+TARGET_INCLUDE_GOOGLE_APP := true
+TARGET_INCLUDE_GOOGLE_CALCULATOR := true
+TARGET_INCLUDE_GOOGLE_CALENDAR := true
+TARGET_INCLUDE_GOOGLE_CHROME := true
+TARGET_INCLUDE_GOOGLE_DESKCLOCK := true
+TARGET_INCLUDE_GOOGLE_DRIVE := false
+TARGET_INCLUDE_GMAIL := false
+TARGET_INCLUDE_GOOGLE_MAPS := false
+TARGET_INCLUDE_GOOGLE_PHOTOS := true
 TARGET_DISABLE_EPPE := true
 
 TARGET_HAS_UDFPS := true
@@ -25,7 +34,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_BLUR := true
 TARGET_EXCLUDES_AUDIOFX := true
-TARGET_BUILD_APERTURE_CAMERA := false
+TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_INCLUDE_GOOGLE_SETUP := true
 
 

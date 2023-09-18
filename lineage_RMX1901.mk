@@ -8,35 +8,42 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Alphadroid stuff.
+# Inherit some common Rise stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# maintainer flag (make Official coz its not showing dev name)
-ALPHA_MAINTAINER := м∂_ιѕяαƒιℓ
-ALPHA_BUILD_TYPE := Official
-WITH_GAPPS := true
-TARGET_INCLUDE_GOOGLE_APP := true
-TARGET_INCLUDE_GOOGLE_CALCULATOR := true
-TARGET_INCLUDE_GOOGLE_CALENDAR := true
-TARGET_INCLUDE_GOOGLE_CHROME := true
-TARGET_INCLUDE_GOOGLE_DESKCLOCK := true
-TARGET_INCLUDE_GOOGLE_DRIVE := false
-TARGET_INCLUDE_GMAIL := false
-TARGET_INCLUDE_GOOGLE_MAPS := false
-TARGET_INCLUDE_GOOGLE_PHOTOS := true
-TARGET_DISABLE_EPPE := true
+# maintainer flag 
+RISING_MAINTAINER := м∂_ιѕяαƒιℓ
 
+# chipset flag (one word only/no spacing)
+RISING_CHIPSET := sdm710
+
+# gapps build flag, if not defined build type is vanilla
+WITH_GMS := true
+TARGET_CORE_GMS := false
+RISING_PACKAGE_TYPE=GAPPS
+RISING_BUILDTYPE=COMMUNITY
+
+# Sushi Bootanimation (only 720/1080p/1440 supported. if not defined, bootanimation is google bootanimation)
+SUSHI_BOOTANIMATION := 1080
+
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := true
+
+# UDFPS ICONS/ANIMATIONS
 TARGET_HAS_UDFPS := true
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_BOOT_ANIMATION_RES := 1080
+
+
+# Wether to use google (true) or AOSP (false) telephony package bundle. (defaults: false for gms core, true for pixel builds)
+TARGET_USE_GOOGLE_TELEPHONY := false
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+SUSHI_BOOTANIMATION := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := false
 TARGET_EXCLUDES_AUDIOFX := true
 TARGET_BUILD_APERTURE_CAMERA := true
-TARGET_INCLUDE_GOOGLE_SETUP := true
 
+# Spoof build description/fingerprint as pixel device
+TARGET_USE_PIXEL_FINGERPRINT := true
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)

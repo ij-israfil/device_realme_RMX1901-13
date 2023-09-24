@@ -8,36 +8,18 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Alphadroid stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixysOS stuff.
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
-# maintainer flag (make Official coz its not showing dev name)
-ALPHA_MAINTAINER := м∂_ιѕяαƒιℓ
-ALPHA_BUILD_TYPE := Official
-WITH_GAPPS := true
-TARGET_INCLUDE_PIXEL_FRAMEWORK := true
-TARGET_INCLUDE_GOOGLE_APP := false
-TARGET_INCLUDE_GOOGLE_CALCULATOR := true
-TARGET_INCLUDE_GOOGLE_CALENDAR := true
-TARGET_INCLUDE_GOOGLE_CHROME := true
-TARGET_INCLUDE_GOOGLE_DESKCLOCK := true
-TARGET_INCLUDE_GOOGLE_DRIVE := false
-TARGET_INCLUDE_GMAIL := false
-TARGET_INCLUDE_GOOGLE_MAPS := false
-TARGET_INCLUDE_GOOGLE_PHOTOS := true
-TARGET_DISABLE_EPPE := true
-
-TARGET_HAS_UDFPS := true
-EXTRA_UDFPS_ANIMATIONS := true
+# Additional stuff for this product.
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_BLUR := true
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_BUILD_APERTURE_CAMERA := true
-TARGET_INCLUDE_GOOGLE_SETUP := true
-
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -45,7 +27,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := lineage_RMX1901
+PRODUCT_NAME := pixys_RMX1901
 PRODUCT_MODEL := Realme X
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo

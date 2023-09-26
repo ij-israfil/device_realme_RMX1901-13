@@ -1065,6 +1065,9 @@
 
     <string name="config_pocketJudgeVendorProximitySensorName">qti.sensor.proximity_fake</string>
 
+	<!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">true</bool>
+
     <!-- Shows the required view for Screen Off Udfps -->
     <bool name="config_supportsScreenOffUdfps">true</bool>
 

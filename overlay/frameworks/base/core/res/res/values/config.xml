@@ -898,6 +898,9 @@
 
     <integer name="config_screenBrightnessDoze">19</integer>
 
+    <!-- Boost Framework -->
+    <bool name="config_supportsBoostFramework">true</bool>
+	
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
 

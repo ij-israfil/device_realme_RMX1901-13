@@ -14,6 +14,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # maintainer flag (make Official coz its not showing dev name)
 ALPHA_MAINTAINER := м∂_ιѕяαƒιℓ
 ALPHA_BUILD_TYPE := Official
+TARGET_DISABLE_EPPE := true
 WITH_GAPPS := true
 TARGET_INCLUDE_PIXEL_FRAMEWORK := true
 TARGET_INCLUDE_GOOGLE_APP := false
@@ -24,8 +25,9 @@ TARGET_INCLUDE_GOOGLE_DESKCLOCK := true
 TARGET_INCLUDE_GOOGLE_DRIVE := false
 TARGET_INCLUDE_GMAIL := false
 TARGET_INCLUDE_GOOGLE_MAPS := false
-TARGET_INCLUDE_GOOGLE_PHOTOS := true
-TARGET_DISABLE_EPPE := true
+TARGET_INCLUDE_GOOGLE_PHOTOS := false
+TARGET_USE_GOOGLE_TELEPHONY := false
+TARGET_USE_PIXEL_FINGERPRINT := true
 
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
@@ -51,12 +53,11 @@ PRODUCT_MODEL := Realme X
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-PRIVATE_BUILD_DESC="RMX1901-user 11 RKQ1.201217.002 1651205774457 release-keys" \
-TARGET_DEVICE=RMX1901 \
-TARGET_PRODUCT=RMX1901
+    PRIVATE_BUILD_DESC="cheetah-user 13 TQ3A.230901.001 10750268 release-keys" \
+    PRODUCT_NAME="RMX1901"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := realme/RMX1901/RMX1901:11/RKQ1.201217.002/1651205774457:user/release-keys
+BUILD_FINGERPRINT := google/cheetah/cheetah:13/TQ3A.230901.001/10750268:user/release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)

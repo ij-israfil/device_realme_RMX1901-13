@@ -92,9 +92,6 @@ TARGET_KERNEL_SOURCE := kernel/realme/RMX1901
 TARGET_KERNEL_CONFIG := RMX1901_defconfig
 TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM_IAS=1
 
-# Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/mmi_charging_enable
-
 # ART
 ART_BUILD_TARGET_NDEBUG := true
 ART_BUILD_TARGET_DEBUG := false

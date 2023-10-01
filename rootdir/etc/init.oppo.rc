@@ -8,6 +8,3 @@ on init
     chmod 0666 /proc/ui_soc_decimal
     chown system system /proc/ui_soc_decimal
     write /proc/ui_soc_decimal 1
-
-    # Charger
-    chown system system /sys/class/power_supply/battery/mmi_charging_enable

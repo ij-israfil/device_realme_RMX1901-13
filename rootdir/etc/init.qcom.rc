@@ -282,15 +282,6 @@ on boot
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 
-on boot
-    write /proc/touchpanel/tp_fw_update 1
-
-    # Lineage Health
-    chown system system /sys/class/power_supply/battery/mmi_charging_enable
-
-    # USB Fast Charge
-    write /sys/kernel/fast_charge/force_fast_charge 1
-
     #sensors log dir
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors

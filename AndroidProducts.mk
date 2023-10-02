@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_RMX1901.mk
+    $(LOCAL_DIR)/aospa_RMX1901.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_RMX1901-userdebug \
-    awaken_RMX1901-eng
+    aospa_RMX1901-userdebug \
+    aospa_RMX1901-eng

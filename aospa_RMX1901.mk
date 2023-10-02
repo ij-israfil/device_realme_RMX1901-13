@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
+ifeq (aospa_RMX1901, $(TARGET_PRODUCT))
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -32,3 +32,4 @@ TARGET_PRODUCT=RMX1901
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := realme/RMX1901/RMX1901:11/RKQ1.201217.002/1651205774457:user/release-keys
+endif

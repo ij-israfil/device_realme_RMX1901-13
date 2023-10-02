@@ -17,6 +17,9 @@ $(call inherit-product, vendor/realme/RMX1901/RMX1901-vendor.mk)
 # Device Specific Settings
 $(call inherit-product-if-exists, packages/apps/PocketMode/pocket_mode.mk)
 
+# Platform
+TARGET_BOARD_PLATFORM := sdm710
+
 # HIDL
 $(call inherit-product, $(LOCAL_PATH)/RMX1901-hidl.mk)
 

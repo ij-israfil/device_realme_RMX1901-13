@@ -13,6 +13,7 @@ $(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 1080
+ALLOW_MISSING_DEPENDENCIES=true
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)

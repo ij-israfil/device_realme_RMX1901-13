@@ -5,7 +5,6 @@
 #
 
 DEVICE_PATH := device/realme/RMX1901
-COMMON_PATH := device/qcom/common
 BOARD_VENDOR := realme
 
 BUILD_BROKEN_DUP_RULES := true

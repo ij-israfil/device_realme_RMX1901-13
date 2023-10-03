@@ -33,8 +33,6 @@ PRODUCT_COMPRESSED_APEX := false
 
 # Audio
 
-AUDIO_CONFIG_DIR := hardware/qcom-caf/sm8350/audio/configs/sdm710
-
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio@7.1-impl \

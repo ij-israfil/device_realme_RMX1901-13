@@ -160,7 +160,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.renderer=opengl \
     debug.sf.disable_client_composition_cache=1 \
     debug.sf.predict_hwc_composition_strategy=0 \
-    debug.sf.disable_client_composition_cache=1 \
+	debug.sf.disable_client_composition_cache=1 \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=adreno \
     debug.sdm.support_writeback=0 \
@@ -172,9 +172,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.protected_contents=true
     debug.sf.auto_latch_unsignaled=true
     debug.sf.enable_gl_backpressure=1
-    vendor.gralloc.disable_ubwc=0 \
-    vendor.gralloc.disable_ahardware_buffer=1 \
-    service.sf.prime_shader_cache=0 \
+	vendor.gralloc.disable_ubwc=0 \
+	vendor.gralloc.disable_ahardware_buffer=1 \
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \

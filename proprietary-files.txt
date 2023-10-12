@@ -1182,10 +1182,6 @@ vendor/lib64/libqti-iopd-client.so|7ab6e2a9a26197167671d4f9e3631b67da44cbc4
 vendor/lib64/vendor.qti.hardware.iop@1.0.so|ab7e9d16481a52a919cd7484eed480913ce29e66
 vendor/lib64/vendor.qti.hardware.iop@2.0.so|a99da96aa7abf8b9a4cb950113d7fe4ccbe4ff6c
 
-# Perf-IRQ balance - from RUI2 11/RKQ1.201217.002/1619368911282:user/release-keys
-vendor/bin/msm_irqbalance|c0910fb319bb8287f176f26078241299455baad0
-vendor/etc/msm_irqbalance.conf|9ba814b99a6eb3a31f618a2f8be32d58bf6f1a75
-
 # Peripheral manager - from RUI2 11/RKQ1.201217.002/1619368911282:user/release-keys
 vendor/bin/pm-proxy|832cbe7995de8177a2ef5bdf3f145131dfe828d4
 vendor/bin/pm-service|28f5e8d8f98c8e97941f514bafdc0b369cc5b600

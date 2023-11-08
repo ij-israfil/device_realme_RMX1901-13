@@ -12,12 +12,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/superior/config/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
+MAINTAINER := м∂_ιѕяαƒιℓ
 SUPERIOR_BUILD_TYPE := COMMUNITY
 USE_AOSP_DIALER := true
 BUILD_WITH_GAPPS := true
 SUPERIOR_UDFPS_ANIMATIONS := true
 TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 

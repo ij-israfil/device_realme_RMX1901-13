@@ -125,11 +125,6 @@ PRODUCT_PACKAGES += \
 # Viper
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
-# GMS
-ifeq ($(WITH_GMS),true)
-GMS_MAKEFILE=gms_minimal.mk
-endif
-
 # Bootanimation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
